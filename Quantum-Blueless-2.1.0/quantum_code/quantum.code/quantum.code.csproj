@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBF32099-B197-4AB9-8E5A-B44D9D3750BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quantum</RootNamespace>
+    <AssemblyName>quantum.code</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Quantum Blueless\Assets\Photon\Quantum\Assemblies\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;PROFILER_REPORT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Quantum Blueless\Assets\Photon\Quantum\Assemblies\</OutputPath>
+    <DefineConstants>PROFILER_REPORT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="PhotonDeterministic, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath Condition="'$(Configuration)' == 'Release'">..\..\assemblies\release\PhotonDeterministic.dll</HintPath>
+      <HintPath Condition="'$(Configuration)' == 'Debug'">..\..\assemblies\debug\PhotonDeterministic.dll</HintPath>
+    </Reference>
+    <Reference Include="quantum.core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath Condition="'$(Configuration)' == 'Release'">..\..\assemblies\release\quantum.core.dll</HintPath>
+      <HintPath Condition="'$(Configuration)' == 'Debug'">..\..\assemblies\debug\quantum.core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BluelessState\Assets\BulletData.cs" />
+    <Compile Include="BluelessState\Assets\CommonBulletData.cs" />
+    <Compile Include="BluelessState\Assets\ExplosiveBulletData.cs" />
+    <Compile Include="BluelessState\Assets\GameControllerData.cs" />
+    <Compile Include="BluelessState\Assets\MovementData.cs" />
+    <Compile Include="BluelessState\Assets\SkillData.cs" />
+    <Compile Include="BluelessState\Assets\SkillInventoryData.cs" />
+    <Compile Include="BluelessState\Assets\StatusData.cs" />
+    <Compile Include="BluelessState\Assets\WeaponData.cs" />
+    <Compile Include="BluelessState\Helpers\LineOfSightHelper.cs" />
+    <Compile Include="BluelessState\Helpers\RespawnHelper.cs" />
+    <Compile Include="BluelessState\Helpers\WeaponHelper.cs" />
+    <Compile Include="BluelessSystems\BulletSystem.cs" />
+    <Compile Include="BluelessSystems\DisconnectSystem.cs" />
+    <Compile Include="BluelessSystems\GameControllerSystem.cs" />
+    <Compile Include="BluelessSystems\MovementSystem.cs" />
+    <Compile Include="BluelessSystems\RespawnSystem.cs" />
+    <Compile Include="BluelessSystems\RobotSystem.cs" />
+    <Compile Include="BluelessSystems\ScoreSystem.cs" />
+    <Compile Include="BluelessSystems\SkillInventorySystem.cs" />
+    <Compile Include="BluelessSystems\SkillSystem.cs" />
+    <Compile Include="BluelessSystems\StatusSystem.cs" />
+    <Compile Include="BluelessSystems\WeaponInventorySystem.cs" />
+    <Compile Include="BluelessSystems\WeaponSystem.cs" />
+    <Compile Include="Core\CodeGen.cs" />
+    <Compile Include="CommandSetup.cs" />
+    <Compile Include="Core\Core.cs" />
+    <Compile Include="Frame.User.cs" />
+    <Compile Include="RuntimeConfig.User.cs" />
+    <Compile Include="RuntimePlayer.User.cs" />
+    <Compile Include="SimulationConfig.User.cs" />
+    <Compile Include="SystemSetup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BluelessState\Data\Bullet.qtn" />
+    <None Include="BluelessState\Data\GameController.qtn" />
+    <None Include="BluelessState\Data\Input.qtn" />
+    <None Include="BluelessState\Data\Robot.qtn" />
+    <None Include="BluelessState\Data\RobotComponents.qtn" />
+    <None Include="BluelessState\Data\Skill.qtn" />
+    <None Include="BluelessState\Data\Spawn.qtn" />
+    <None Include="BluelessState\Data\Weapon.qtn" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(ProjectDir)..\..\tools\codegen_unity\quantum.codegen.unity.host.exe" "$(TargetDir)\quantum.code.dll" "$(SolutionDir)..\Quantum Blueless\Assets"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)..\..\tools\codegen\quantum.codegen.host.exe" "$(ProjectPath)"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

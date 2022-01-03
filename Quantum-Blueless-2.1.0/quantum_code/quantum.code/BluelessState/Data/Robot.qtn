@@ -1,0 +1,32 @@
+﻿component PlayerID{
+	player_ref PlayerRef;
+}
+
+signal OnRobotRespawn(entity_ref robot);
+
+signal OnRobotHit(entity_ref bullet, entity_ref robot, FP damage);
+signal OnRobotSkillHit(entity_ref skill, entity_ref robot);
+
+signal OnRobotDeath(entity_ref deadRobot, entity_ref killer);
+
+
+// Events
+abstract event RobotEvent {
+	entity_ref Robot; 	
+}
+
+event OnRobotTakeDamage : RobotEvent {
+	FP Damage;
+	entity_ref Source; 	
+}
+
+synced event OnRobotDeath : RobotEvent {
+	entity_ref Killer; 	
+}
+
+event OnRobotCreated : RobotEvent {}
+event OnRobotDoubleJump : RobotEvent {}
+event OnRobotGrounded : RobotEvent {}
+event OnRobotJump : RobotEvent {}
+event OnRobotRespawn : RobotEvent {}
+event OnRobotChangeWeapon : RobotEvent {}

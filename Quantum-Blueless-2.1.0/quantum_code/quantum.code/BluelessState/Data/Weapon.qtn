@@ -1,0 +1,18 @@
+﻿asset WeaponData;
+
+struct Weapon {
+	Boolean IsRecharging;
+	Int32 currentAmmo;
+	FP FireRateTimer;
+	FP DelayToStartRechargeTimer;
+	FP RechargeRate;
+	FP chargeTime;
+	asset_ref<WeaponData> WeaponData;
+}
+
+
+// Events
+
+event OnWeaponShoot{
+	entity_ref Robot;
+}

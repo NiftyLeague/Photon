@@ -1,0 +1,22 @@
+﻿asset GameControllerData;
+
+enum GameState {
+	Running,
+	Ended 
+}
+
+struct GameController {
+	GameState State;
+	FP GameTimer;
+}
+
+global {
+	GameController GameController;
+	FP DisconnectTime;
+}
+
+// Signals
+signal OnGameEnded(GameController* gameController);
+
+// Events
+synced event OnGameEnded {}

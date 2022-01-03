@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd8e95ae0daaec4496511105240e8a3, type: 3}
+  m_Name: AssetResources
+  m_EditorClassIdentifier: 
+  AssetBundlesGroup:
+    _resources: []
+  ResourcesGroup:
+    _resources:
+    - Path: Resources/DB/Configs/DefaultPhysicsMaterial
+      AssetRef:
+        Id:
+          Value: 1
+      ResourcePath: DB/Configs/DefaultPhysicsMaterial
+    - Path: Resources/DB/Configs/DefaultNavMeshAgentConfig
+      AssetRef:
+        Id:
+          Value: 2
+      ResourcePath: DB/Configs/DefaultNavMeshAgentConfig
+    - Path: Resources/DB/Configs/DefaultCharacterController2D
+      AssetRef:
+        Id:
+          Value: 3
+      ResourcePath: DB/Configs/DefaultCharacterController2D
+    - Path: Resources/DB/Configs/DefaultCharacterController3D
+      AssetRef:
+        Id:
+          Value: 4
+      ResourcePath: DB/Configs/DefaultCharacterController3D
+    - Path: Resources/DB/Configs/SimulationConfig
+      AssetRef:
+        Id:
+          Value: 5
+      ResourcePath: DB/Configs/SimulationConfig
+    - Path: Resources/DB/RobotStatusData
+      AssetRef:
+        Id:
+          Value: 104647321615884386
+      ResourcePath: DB/RobotStatusData
+    - Path: Resources/DB/MachineGunBullet|EntityView
+      AssetRef:
+        Id:
+          Value: 145070992106566736
+      ResourcePath: DB/MachineGunBullet
+    - Path: Resources/DB/BazookaBullet|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 466720029429914159
+      ResourcePath: DB/BazookaBullet
+    - Path: Resources/DB/Weapons/MachineGunWeapon
+      AssetRef:
+        Id:
+          Value: 784177776545475376
+      ResourcePath: DB/Weapons/MachineGunWeapon
+    - Path: Resources/DB/ElectrifySkill|EntityView
+      AssetRef:
+        Id:
+          Value: 1005432759377192644
+      ResourcePath: DB/ElectrifySkill
+    - Path: Resources/DB/Robot|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 1011477893783658622
+      ResourcePath: DB/Robot
+    - Path: Resources/DB/PhysicsMaterial/ElectrifySkillPhysicsMaterial
+      AssetRef:
+        Id:
+          Value: 1115472437402486504
+      ResourcePath: DB/PhysicsMaterial/ElectrifySkillPhysicsMaterial
+    - Path: Resources/DB/PhysicsMaterial/GranadePhysicsMaterial
+      AssetRef:
+        Id:
+          Value: 1350193112688741494
+      ResourcePath: DB/PhysicsMaterial/GranadePhysicsMaterial
+    - Path: Resources/DB/Bullets/MachineGunBullet
+      AssetRef:
+        Id:
+          Value: 1607594902788832224
+      ResourcePath: DB/Bullets/MachineGunBullet
+    - Path: Resources/DB/Skills/RobotSkillInventoryData
+      AssetRef:
+        Id:
+          Value: 1610485836535742347
+      ResourcePath: DB/Skills/RobotSkillInventoryData
+    - Path: Resources/DB/Map1
+      AssetRef:
+        Id:
+          Value: 1710471675203725834
+      ResourcePath: DB/Map1
+    - Path: Resources/DB/RobotMovementData
+      AssetRef:
+        Id:
+          Value: 1801589993680523909
+      ResourcePath: DB/RobotMovementData
+    - Path: Resources/DB/Bullets/SniperBullet
+      AssetRef:
+        Id:
+          Value: 1873210876879650930
+      ResourcePath: DB/Bullets/SniperBullet
+    - Path: Resources/DB/Weapons/ExplosiveWeapon
+      AssetRef:
+        Id:
+          Value: 2461316003945660101
+      ResourcePath: DB/Weapons/ExplosiveWeapon
+    - Path: Resources/DB/SpawnPoint|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 2472110243133371254
+      ResourcePath: DB/SpawnPoint
+    - Path: Resources/DB/Map1_mesh
+      AssetRef:
+        Id:
+          Value: 2492565487224226191
+      ResourcePath: DB/Map1_mesh
+    - Path: Resources/DB/MachineGunBullet|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 2567272093925696668
+      ResourcePath: DB/MachineGunBullet
+    - Path: Resources/DB/Bullets/ExplosiveBullet
+      AssetRef:
+        Id:
+          Value: 2907901479004122910
+      ResourcePath: DB/Bullets/ExplosiveBullet
+    - Path: Resources/DB/GameControllerData
+      AssetRef:
+        Id:
+          Value: 2920100381058534922
+      ResourcePath: DB/GameControllerData
+    - Path: Resources/DB/SpawnPoint|EntityView
+      AssetRef:
+        Id:
+          Value: 3265704432841967760
+      ResourcePath: DB/SpawnPoint
+    - Path: Resources/DB/Bullets/GranadeBullet
+      AssetRef:
+        Id:
+          Value: 3324662073058704659
+      ResourcePath: DB/Bullets/GranadeBullet
+    - Path: Resources/DB/Skills/ElectrifySkillData
+      AssetRef:
+        Id:
+          Value: 3679340201402061555
+      ResourcePath: DB/Skills/ElectrifySkillData
+    - Path: Resources/DB/Robot|EntityView
+      AssetRef:
+        Id:
+          Value: 3756735664002875727
+      ResourcePath: DB/Robot
+    - Path: Resources/DB/BazookaBullet|EntityView
+      AssetRef:
+        Id:
+          Value: 3893106518522255077
+      ResourcePath: DB/BazookaBullet
+    - Path: Resources/DB/PhysicsMaterial/PlayerMaterial
+      AssetRef:
+        Id:
+          Value: 4196567290991825799
+      ResourcePath: DB/PhysicsMaterial/PlayerMaterial
+    - Path: Resources/DB/ElectrifySkill|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 4473321660304365115
+      ResourcePath: DB/ElectrifySkill

@@ -1,0 +1,8 @@
+﻿input {
+	button Fire;
+	button Jump;
+	button CastSkill;
+	button ChangeWeapon;
+	SByte Movement;
+	FP AimDirection;
+}

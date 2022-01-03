@@ -1,0 +1,64 @@
+# 2.1.0
+
+## Build 25 (Dec 21, 2021)
+
+- Upgraded to Quantum 2.1.0 RC2N 922
+- Refactored multiple UI, audio and camera classes
+- Robot prefab to verified bind behaviour
+- Removed bitstrap package
+- Fixed: Disconnect issue
+
+## Build 19 (Aug 25, 2021)
+
+- Upgraded to Quantum SDK 2.1.0 A1N 690
+- Fixed: Controllers behaviour
+
+# 2.0.0
+
+## Jun 08, 2020
+
+- Upgrade Quantum SDK to 2.0.0 RC2N build 620
+- Updated minimum Unity version from 2018.1.4f1 to 2018.4.15f1
+
+# 1.2.0
+
+## Aug 15, 2019
+
+- Migrated to Quantum 1.2.4 B2
+- Updated minimum Unity version from 2017.4.8f1 to 2018.1.4f1
+
+## Feb 05, 2019
+
+- Updated lobby UI
+
+## Jan 29, 2019
+
+- Added Steam integration
+
+## Nov 22, 2018
+
+- Migrated to Quantum 1.2.2.
+
+## Nov 12, 2018
+
+- Added PlayerIO integration
+
+## Sep 20, 2018
+
+- Migrated to Quantum 1.2.1.
+- Relinking UI and lobby scripts to make upgrading Quantum work
+
+## Aug 17, 2018
+
+- Migrated to Quantum 1.2.0.
+
+# 1.1.0
+
+## Aug 7, 2018
+
+- Migrated to Quantum 1.1.8.
+
+## Jun 18, 2018
+
+- Initial release
+

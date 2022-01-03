@@ -1,0 +1,19 @@
+﻿asset BulletData;
+asset import CommonBulletData;
+asset import ExplosiveBulletData;
+
+component BulletFields{
+	FP Time;
+	entity_ref Source;
+	FPVector2 Direction;
+	asset_ref<BulletData> BulletData;
+}
+
+// Events
+event OnBulletDestroyed {
+	Int32 BulletRefHashCode;
+	entity_ref Robot;
+	FPVector2 BulletPosition;
+	FPVector2 BulletDirection;
+	Int64 BulletDataId;
+}

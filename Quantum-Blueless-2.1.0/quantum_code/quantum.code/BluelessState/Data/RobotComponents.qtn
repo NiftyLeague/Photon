@@ -1,0 +1,43 @@
+﻿asset StatusData;
+asset MovementData;
+asset SkillInventoryData;
+
+component Movement {
+	FP GroundedFramesCount;
+	FP UngroundedFramesCount;
+	Boolean VirtualGrounded;
+	Boolean PrevGrounded;
+	Boolean CanDoubleJump;
+	Boolean IsFacingRight;
+	FP JumpDelayTimer;
+
+	asset_ref<MovementData> MovementData;
+}
+
+component WeaponInventory {
+	Int32 CurrentWeaponIndex;
+	array<Weapon>[2] Weapons;
+
+	array<asset_ref<WeaponData>>[2] WeaponsData;
+}
+
+component SkillInventory {
+	FP CastRateTimer;
+	asset_ref<SkillInventoryData> SkillInventoryData;
+}
+
+component Status {
+	FP CurrentHealth;
+	Boolean IsDead;
+	FP RespawnTimer;
+	FP RegenTimer;
+	FP InvincibleTimer;
+	Int32 DisconnectedTicks;
+
+	asset_ref<StatusData> StatusData;
+}
+
+component Score {
+	Int32 Kills;
+	Int32 Deaths;
+}

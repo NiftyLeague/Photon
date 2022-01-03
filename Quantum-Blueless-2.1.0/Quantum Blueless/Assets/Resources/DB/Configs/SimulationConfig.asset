@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c7b65fea44e964aabbede6a2e3d752, type: 3}
+  m_Name: SimulationConfig
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/Configs/SimulationConfig
+      Guid:
+        Value: 5
+    Navigation:
+      AvoidanceRange:
+        RawValue: 524288
+      MaxAvoidanceCandidates: 64
+      DefaultNavMeshAgent:
+        Id:
+          Value: 2
+      EnableSteeringCallbacks: 0
+      EnableAvoidanceCallbacks: 0
+    Physics:
+      Gravity:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: -3932160
+        Z:
+          RawValue: 0
+      SolverIterations: 5
+      UseAngularVelocity: 1
+      UseVerticalTransform: 0
+      IsMultithreaded: 0
+      PenetrationAllowance:
+        RawValue: 655
+      PenetrationCorrection:
+        RawValue: 32768
+      MinLinearIntegration:
+        RawValue: 0
+      AllowSleeping: 0
+      SleepTimeSec:
+        RawValue: 32768
+      LinearSleepTolerance:
+        RawValue: 6553
+      AngularSleepToleranceInRad:
+        RawValue: 6553
+      DefaultPhysicsMaterial:
+        Id:
+          Value: 1
+      DefaultCharacterController2D:
+        Id:
+          Value: 3
+      DefaultCharacterController3D:
+        Id:
+          Value: 4
+      Layers:
+      - Default
+      - TransparentFX
+      - Ignore Raycast
+      - 
+      - Water
+      - UI
+      - 
+      - 
+      - Environment
+      - Skills
+      - Character
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      LayerMatrix: c9fdffffc8fcffffc8fcffffffffffffc8fcffffc8fcffffffffffffffffffffc9feffffc8f9fffffffdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    AutoLoadSceneFromMap: 1
+    DeltaTimeType: 0
+    UsePredictionArea: 0
+    HeapPageShift: 13
+    HeapPageCount: 256
+    ThreadCountOverrideEnabled: 0
+    ThreadCountOverride: 0
